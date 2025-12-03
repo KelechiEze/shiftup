@@ -217,12 +217,12 @@ const Hero: React.FC = () => {
            <div className="h-full w-[8%] bg-[#FEFCE8] hero-strip-bar"></div>
         </div>
 
-        {/* 2. The Images Grid */}
+        {/* 2. The Images Grid - Images aligned to top with no gap between first two */}
         <div className="relative z-10 w-full max-w-[1400px] mx-auto h-full px-4 md:px-8">
-            <div className="flex w-full h-full items-end gap-0 overflow-x-auto md:overflow-hidden snap-x snap-mandatory scrollbar-hide pb-0">
+            <div className="flex w-full h-full items-start gap-0 overflow-x-auto md:overflow-hidden snap-x snap-mandatory scrollbar-hide pt-0">
                 
                 {/* Image 1: STATIC, Colored, Portrait (Uses shared couple image) */}
-                <div className="hero-image-block flex-shrink-0 w-[85vw] md:w-[28%] h-[85%] md:h-[80%] relative mr-4 md:mr-6 snap-center self-end">
+                <div className="hero-image-block flex-shrink-0 w-[85vw] md:w-[28%] h-[85%] md:h-[80%] relative mr-0 md:mr-0 snap-center self-start">
                     <img 
                         src={sharedImage}
                         alt="ShiftUp Couple Color" 
@@ -230,8 +230,8 @@ const Hero: React.FC = () => {
                     />
                 </div>
 
-                {/* Image 2: STATIC, Black & White, Portrait (Uses shared couple image) */}
-                <div className="hero-image-block flex-shrink-0 w-[85vw] md:w-[28%] h-[85%] md:h-[80%] relative mr-4 md:mr-6 snap-center self-end">
+                {/* Image 2: STATIC, Black & White, Portrait (Uses shared couple image) - NO MARGIN TO TOUCH IMAGE 1 */}
+                <div className="hero-image-block flex-shrink-0 w-[85vw] md:w-[28%] h-[85%] md:h-[80%] relative mr-4 md:mr-6 snap-center self-start">
                     <img 
                         src={sharedImage}
                         alt="ShiftUp Couple BW" 
@@ -240,7 +240,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Image 3: SLIDER, Colored, Landscape/Large */}
-                <div className="hero-image-block flex-shrink-0 w-[85vw] md:flex-1 h-[95%] md:h-[90%] relative snap-center self-end overflow-hidden shadow-2xl rounded-t-lg md:rounded-t-none group">
+                <div className="hero-image-block flex-shrink-0 w-[85vw] md:flex-1 h-[95%] md:h-[90%] relative snap-center self-start overflow-hidden shadow-2xl rounded-t-lg md:rounded-t-none group">
                     {/* Sliding Container using TranslateX */}
                     <div 
                         className="flex h-full transition-transform duration-1000 ease-in-out will-change-transform"
