@@ -28,7 +28,7 @@ const blogPosts = [
     excerpt: "Most training programs teach you to code. Top Universe teaches you to become a builder."
   },
   {
-    image: "https://images.unsplash.com/photo-1507842217121-9e93c8aaf27c?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop",
     date: "November 13, 2025",
     readTime: "2 min read",
     title: "The Day I Stopped Fighting With ChatGPT",
